@@ -1,0 +1,352 @@
+/*estilos universales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*estilos del body*/
+body{
+    background-color: #4b0120dc;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+header{
+    background-color: #4b0120dc;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #4b0120dc;
+}
+/*boton animado*/
+#botonAnimado {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+#botonAnimado:hover {
+    background-color: rgba(171, 47, 202, 0.906);
+    color: white;
+    transform: rotate(20deg);
+}
+#botonAnimado2:hover {
+    background-color: rgba(21, 205, 218, 0.906);
+    color: black;
+}
+#botonAnimado3:hover {
+    background-color: rgba(218, 21, 133, 0.906);
+    color: black;
+    border-radius: 9px;
+}
+
+/*principal*/
+.principal .main_img{
+    width: 500px;
+    height: 730px;
+}
+.logo{
+    height: 100px;
+}
+.logo-header{
+    height: 90px
+}
+h1{
+    color: white;
+}
+.nav{
+    display: flex;
+    gap: 15px;
+}
+.nav a{
+    font-weight: bold;
+    color: black;
+}
+h5{
+    background-color: white;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.card-body{
+    text-align: center;
+}
+.container{
+    margin-top: 35px;
+}
+.container-galeria{
+    margin-top: 30px;
+}
+h2{
+    text-align: center;
+    color: white;
+}
+.margin-bottom{
+    margin-bottom: 25px;
+}
+.margin-top{
+    margin-top: 40px;
+}
+.gap{
+    gap: 20px;
+}
+/*carrito*/
+
+.item-carrito {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    gap: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.item-carrito img {
+    width: 100px;   
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.item-info {
+    flex: 1;
+}
+.btn-eliminar {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+/*galeria*/
+.container-galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 3fr);
+    align-items: center;
+}
+.container img{
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+}
+.container-galeria img{
+    width: 360px;
+    height: 450px;
+    object-fit: cover;
+    margin-top: 24px;
+}
+.container-galeria-4{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 4fr);
+    align-items: center;
+}
+.container-productos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 3fr);
+}
+.container-galeria-4 img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+.container-productos{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.gap{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.galeria2 .col img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+.galeria2 .col{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 3fr);
+}
+
+figcaption{
+    background-color: white;
+    gap: 10px;
+}
+
+.carrusel img{
+    height: 500px;
+    object-fit: cover;
+}
+.main-img{
+    width: 500px;
+    height: 680px;
+}
+
+/*estilo para el footer*/
+#footer{
+    max-width: 100vw;
+    color: #ffff;
+}
+.footer-texto h2{
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px;
+    text-align: center;
+}
+
+.linea-vertical{
+    border-top: 1px solid black;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #810036dc;
+}
+.footer-container .footer-marca{
+    text-align: center;
+    margin-top: 30px;
+}
+.footer-col ul{
+    list-style: none;
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
+.footer-izquierda{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.footer-izquierda ul{
+    list-style: none;
+}
+.footer-izquierda ul li{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: start;
+    font-size: small;
+}
+
+/*estilo para login*/
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+h1{
+    text-align: center;
+}
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #2d89ef;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #1b6edc;
+}
+
+/*estilos para media desktop*/
+@media screen and (min-width: 768px) and (max-width: 1023) {
+    .logo{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container-carrusel{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container-galeria{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container-galeria-4{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .galeria2{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container-productos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/*estilos para media mobile*/
+@media screen and (max-width:767px) {
+    .logo{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container-carrusel{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container-galeria{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container-galeria-4{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .galeria2{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container-productos{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
